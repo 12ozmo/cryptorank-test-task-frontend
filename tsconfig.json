@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+      
+    },
+    "typeRoots": ["node_modules/@types", "@types"],
+    "types": ["jest", "@testing-library/jest-dom"]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/page.test",
+    "src/utils/athCalculations.test.ts",
+    "src/pages/converter/Converter.test",
+    "node_modules/@types/node/ts4.8/globals.global.d.ts",
+    "node_modules/@types/node/ts4.8/globals.global.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /api/  # Assuming you want to disallow crawling of API routes
