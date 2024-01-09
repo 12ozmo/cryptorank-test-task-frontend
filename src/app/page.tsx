@@ -65,7 +65,6 @@ const Page = () => {
         <meta name="description" content="Bitcoin All-Time High, From and To ATH data" />
         <script
           type="application/ld+json"
-          // TODO ???
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrgJSONLD) }}
         />
       </Head>
