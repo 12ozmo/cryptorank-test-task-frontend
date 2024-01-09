@@ -51,7 +51,7 @@ describe('Converter Component', () => {
 
         await waitFor(() => {
             fireEvent.click(screen.getByText('Convert'));
-            expect(screen.getByTestId('test-amount')).toHaveTextContent('1250.00'); // Assuming 100 BTC to ETH
+            expect(screen.getByTestId('test-amount')).toHaveTextContent('1250.00');
         });
     });
 
@@ -78,14 +78,14 @@ describe('Converter Component', () => {
         await waitFor(() => {
             fireEvent.click(screen.getByText('Convert'));
 
-            expect(screen.getByTestId('test-amount')).toHaveTextContent('1250.00'); // Assuming 100 BTC to ETH
+            expect(screen.getByTestId('test-amount')).toHaveTextContent('1250.00');
         });
 
 
         await waitFor(() => {
             fireEvent.click(screen.getByText('Convert'));
 
-            expect(screen.getByTestId('test-amount')).toHaveTextContent('25'); // New conversion result
+            expect(screen.getByTestId('test-amount')).toHaveTextContent('25');
         });
     });
 
